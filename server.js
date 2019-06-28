@@ -1,18 +1,20 @@
 // Dependencies
 // ==============================================================================
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
+var express = require('express');
+// const bodyParser = require('body-parser');
+var app = express();
 
 var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static('public'));
 // app.use(express.static('app'));
 
-const exphbs = require('express-handlebars');
+var exphbs = require('express-handlebars');
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
