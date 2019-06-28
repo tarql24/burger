@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.1.2",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.12"
+  },
+  "devDependencies": {},
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +25,7 @@
   "bugs": {
     "url": "https://github.com/tarql24/burger/issues"
   },
+
   "homepage": "https://github.com/tarql24/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
@@ -22,4 +33,5 @@
     "mysql2": "^1.6.5",
     "sequelize": "^5.8.12"
   }
+
 }

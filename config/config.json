@@ -1,8 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "YaNg3918TASAN",
+    "database": "burgers",
+
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
