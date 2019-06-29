@@ -3,7 +3,6 @@
     "username": "root",
     "password": "YaNg3918TASAN",
     "database": "burgers",
-
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
