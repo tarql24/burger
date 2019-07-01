@@ -1,0 +1,50 @@
+<center><img src="https://civileats.com/wp-content/uploads/2016/06/iStock_70900805_MEDIUM-e1465858127370.jpg"
+    width="30%">
+</center>
+
+<table style="width:100%">
+  <tr>
+    <th style="font-size: 30px;">
+      Burgers To Eat!!!
+    </th>
+    <th style="font-size: 30px;">Devoured Burgers!</th>
+
+  </tr>
+  <tr>
+    <td valign="top">
+      <ul>
+        {{#each cats}}
+        {{#unless sleepy}}
+        {{> cats/cat-block sleep=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </td>
+    <td valign="top">
+      <ul>
+        {{#each cats}}
+        {{#if sleepy}}
+        {{> cats/devoured sleep=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </td>
+
+  </tr>
+</table>
+<center>
+  <h2>Burgers To Eat</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">Burger Name:</label>
+      <input type="text" id="ca" name="name" required><br>
+    </div>
+
+    {{!-- <div class="form-group">
+      <input type="radio" name="sleepy" value="0" checked>
+    </div> --}}
+
+    <button type="submit" value="0">Add Burger</button>
+  </form>
+</center>
